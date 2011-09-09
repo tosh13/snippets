@@ -4,7 +4,7 @@ require 'date'
 #
 #Authors::   Toshiki I. Saito
 #Version::   1.0 2011-09-08 tosh
-#License::   GPL
+#License::   The MIT License
 #--
 # starting: Starting date
 # ending: Ending date
@@ -18,16 +18,6 @@ require 'date'
 #     between the dates as if they were of the same year.
 # md: Days Excluding Years And Months; Complete calendar days
 #     between the dates as if they were of the same month and same year.
-#
-# ExcelのDATEDIFと同じ（つもりです）
-# datedif(開始日, 終了日, 単位）
-# 単位：
-# "y" 指定した期間の年数（満年数）を表示
-# "m" 指定した期間の月数（満月数）を表示
-# "d" 指定した期間の日数（満日数）を表示
-# "ym" 指定した期間の1年に満たない月数を表示
-# "yd" 指定した期間の1年に満たない日数を表示
-# "md" 指定した期間の1ヶ月に満たない日数を表示
 #++
 def datedif(starting, ending, interval)
   if ending < starting then false
