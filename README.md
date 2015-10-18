@@ -3,8 +3,8 @@
 
 
 ## Datedif (Excel) in R
-    options(CRAN="http://cran.ism.ac.jp//")
-    options(repos="http://cran.ism.ac.jp//")
+    options(CRAN="http://cran.ism.ac.jp/")
+    options(repos="http://cran.ism.ac.jp/")
     install.packages("lubridate", dep=TRUE)
     require(lubridate)
     bd <- c("2009/08/29","2008/10/25","2007/10/11")
