@@ -5,7 +5,6 @@ datedif <- function(starting, ending) {
   m <- ym + y*12
   d <- as.Date(ending) - as.Date(starting)
   age <- paste(as.character(y),"year(s)",as.character(ym),"month(s)")
-  item <- c("y", "ym","age","m","d")
-  a <- sapply(item, get)
-  return(a)
+  periods <- data.frame(y,ym,m,d,age)
+  return(periods)
 }
