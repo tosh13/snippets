@@ -12,13 +12,15 @@
     > f1 <- data.frame(bd,day1)
     > age <- datedif(f1$bd,f1$day1)
     > age
-      y  m    d ym  yd md                          period
-    1 4 59 1816 11 355 21 4 year(s) 11 month(s) 21 day(s)
-    2 6 72 2196  0   5  5   6 year(s) 0 month(s) 5 day(s)
-    3 6 83 2553 11 361 26 6 year(s) 11 month(s) 26 day(s)
+      y  m    d ym  yd md
+    1 4 59 1816 11 355 21
+    2 6 72 2196  0   5  5
+    3 6 83 2553 11 361 26
     > age$y #満年齢
     [1] 4 6 6
     > age$ym #満月齢
     [1] 11  0 11
     > age$md #満日齢
     [1] 21  5 26
+    > paste("満",age$y,"歳",age$ym,"ヶ月",age$md,"日")
+    [1] "満 4 歳 11 ヶ月 21 日" "満 6 歳 0 ヶ月 5 日"   "満 6 歳 11 ヶ月 26 日"
