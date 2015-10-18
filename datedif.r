@@ -7,6 +7,5 @@ datedif <- function(starting, ending) {
   days <- as.integer(format(ymd(ending),"%d")) - as.integer(format(ymd(starting),"%d"))
   yd <- as.integer(ymd(ending) - (ymd(starting) %m+% months(12*y)))
   md <- ifelse(days<0, ymd(ending) - (ymd(starting) %m+% months(m)), days)
-  period <- data.frame(y,m,d,ym,yd,md)
-  return(period)
+  return(data.frame(y,m,d,ym,yd,md))
 }
