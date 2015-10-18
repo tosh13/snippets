@@ -6,7 +6,7 @@
     > options(repos="http://cran.ism.ac.jp/")
     > install.packages("lubridate", dep=TRUE)
     > require(lubridate)
-    > source("https://raw.githubusercontent.com/tosh13/snippets/master/datedif.r")
+    > source("https://raw.githubusercontent.com/tosh13/snippets/master/datedif.R")
     > bd <- c("2009/08/29","2008/10/25","2007/10/11")
     > day1 <- c("2014/08/19","2014/10/30","2014/10/7")
     > f1 <- data.frame(bd,day1)
