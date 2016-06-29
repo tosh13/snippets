@@ -1,9 +1,17 @@
-# snippets
-## Datedif (Excel) in Ruby
+snippets
+======
+Excel Datedif function in Ruby and R.
+[![MIT licensed][shield-license]](#)
+
+
+Datedif (Excel) in Ruby
+-----------------------
 [History](http://saitotoshiki.com/blog/2011/09/excel_datedif_by_ruby_rails)
 
-## Datedif (Excel) in R
+Datedif (Excel) in R
+------------------------
 ### Usage
+```
     > options(repos="http://cran.ism.ac.jp/")
     > install.packages("lubridate", dep=TRUE)
     > source("https://raw.githubusercontent.com/tosh13/snippets/master/datedif.R")
@@ -29,3 +37,12 @@
     [1] 21  5 26
     > paste("満",age$y,"歳",age$ym,"ヶ月",age$md,"日")
     [1] "満 4 歳 11 ヶ月 21 日" "満 6 歳 0 ヶ月 5 日"   "満 6 歳 11 ヶ月 26 日"
+```
+
+License
+-------
+Snipets are licensed under the [MIT](#) license.  
+Copyright &copy; 2016, Toshiki Saito
+
+[shield-license]: https://img.shields.io/badge/license-MIT-blue.svg
+[AECalc]: https://github.com/nnh/AECalc/blob/master/AECalc.xlsm?raw=true
