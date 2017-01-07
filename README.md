@@ -15,16 +15,16 @@ Datedif (Excel) in R
 ```
     > options(repos="http://cran.ism.ac.jp/")
     > install.packages("lubridate", dep=TRUE)
-    > source("https://raw.githubusercontent.com/tosh13/snippets/master/datedif.R")
-    > bd <- c("2009/08/29","2008/10/25","2007/10/11")
-    > day1 <- c("2014/08/19","2014/10/30","2014/10/7")
-    > f1 <- data.frame(bd,day1)
+    > source("https://raw.githubusercontent.com/tosh13/snippets/master/DateDif.R")
+    > bd <- c("2009/08/29", "2008/10/25", "2007/10/11")
+    > day1 <- c("2014/08/19", "2014/10/30", "2014/10/7")
+    > f1 <- data.frame(bd, day1)
     > f1
               bd       day1
     1 2009/08/29 2014/08/19
     2 2008/10/25 2014/10/30
     3 2007/10/11  2014/10/7
-    > age <- datedif(f1$bd,f1$day1)
+    > age <- DateDif(f1$bd, f1$day1)
     > age
       y  m    d ym  yd md
     1 4 59 1816 11 355 21
